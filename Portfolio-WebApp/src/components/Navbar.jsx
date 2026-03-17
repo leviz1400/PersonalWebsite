@@ -1,4 +1,6 @@
-function AppHeaderNavBar() {
+import { Link } from "react-router-dom"
+
+function NavBar() {
     return (
         <header>
             <div className="header-flex-container">
@@ -7,13 +9,17 @@ function AppHeaderNavBar() {
 
             <nav className="nav-bar">
                 <div className="nav-bar-div">
-                    <button className="nav-btn">Home</button>
+                    <Link to="/">
+                        <button className="nav-btn">Home</button>
+                    </Link>
                     <button className="nav-btn">About</button>
-                    <button className="nav-btn">Contact</button>
+                    <Link to="/contact">
+                        <button className="nav-btn">Contact</button>
+                    </Link>
                 </div>
             </nav>
         </header>
     )
 }
 
-export default AppHeaderNavBar
+export default NavBar
