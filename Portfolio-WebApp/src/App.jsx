@@ -1,16 +1,20 @@
 import { useState } from 'react'
 
 import AppHeaderNavBar from './components/Navbar'
-import HomeContentContainer from './components/Home'
+import Home from './pages/Home'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
   return (
-    <div>
-      <AppHeaderNavBar />
-      <HomeContentContainer />
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+      </Routes>
+
+    </HashRouter>
   )
 }
 
 export default App
+

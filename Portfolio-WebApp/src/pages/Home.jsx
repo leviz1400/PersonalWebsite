@@ -3,7 +3,7 @@ import JavaLogo from '../assets/Java-logo.png'
 import CSharpLogo from '../assets/Csharp-Logo.png'
 import LuaLogo from '../assets/Lua-Logo.png'
 
-function HomeContentContainer() {
+function Home() {
     return (
 
       // Language Knowledge Section
@@ -39,4 +39,4 @@ function HomeContentContainer() {
     )
 }
 
-export default HomeContentContainer
+export default Home
