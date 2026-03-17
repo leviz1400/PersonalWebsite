@@ -63,6 +63,8 @@
   min-height: 10rem;
   box-sizing: border-box;
 
+  background-color: rgb(0, 0, 0);
+
   border: 3px rgb(0, 238, 255) solid;
 }
 
@@ -92,10 +94,12 @@
 /* Descriptions Under Logos */
 
 .description-text {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin-top: auto;
 }
+
+/*Comment*/
