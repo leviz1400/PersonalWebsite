@@ -1,0 +1,101 @@
+/* Website Header */
+
+.header-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  margin: 0 auto;
+  background-color: rgba(0, 238, 255, 0);
+}
+
+/* Website Title Text */
+
+.web-title {
+  color: rgb(0, 0, 0);
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+}
+
+/* Navigation Bar */
+
+.nav-bar-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+
+  gap: 1rem;
+  height: 2rem;
+}
+
+/* Navigation Buttons */
+
+.nav-btn {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: 3px rgb(0, 238, 255) solid;
+}
+
+/* Logo Container */
+
+.language-knowledge-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  width: 100%;
+  max-width: 2160px;
+  height: auto;
+  min-height: 10rem;
+  box-sizing: border-box;
+
+  border: 3px rgb(0, 238, 255) solid;
+}
+
+/* Logo Divs */
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  flex: 1;
+  max-width: 25%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Logos */
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+/* Descriptions Under Logos */
+
+.description-text {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+}
