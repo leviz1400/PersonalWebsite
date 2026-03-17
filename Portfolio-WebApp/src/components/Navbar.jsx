@@ -1,4 +1,4 @@
-export function AppHeaderNavBar() {
+function AppHeaderNavBar() {
     return (
         <header>
             <div className="header-flex-container">
@@ -15,3 +15,5 @@ export function AppHeaderNavBar() {
         </header>
     )
 }
+
+export default AppHeaderNavBar
