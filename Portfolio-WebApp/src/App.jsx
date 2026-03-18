@@ -2,8 +2,10 @@ import { useState } from 'react'
 
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Layout from './components/Layout'
+import Layout from './components/nav-section/Layout'
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import './Languages.css'
+import './components/nav-section/Navigation.css'
 import './App.css'
 
 function App() {
