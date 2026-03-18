@@ -1,4 +1,4 @@
-/* Logo Container */
+/* Backdrop Frame */
 
 .languages-frame {
     display: flex;
@@ -20,10 +20,12 @@
     margin-top: 2rem;
 }
 
+/* Language Container Frames */
+
 .language-container-frame {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex: 1;
 
@@ -36,12 +38,27 @@
     border-radius: 35px;
     border-style: solid;
     background-color: #282a2c;
+    animation: 1s ease-in-out 0s 1 normal forwards easeInAnimation;
 }
+
+@keyframes easeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo Frame/Container */
 
 .logo-frame {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20%;
 
     position: absolute;
     /* top: 0; */
@@ -54,6 +71,8 @@
     
 }
 
+/* Logo Image */
+
 .logo-image {
     width: 100%;
     height: auto;
@@ -65,15 +84,24 @@
     margin-top: 0;
 }
 
+/* Frame to Hold Text Within */
+
 .language-description-frame {
     display: flex;
     align-items: flex-end;
     flex: 1;
     bottom: 0;
+    padding-bottom: 10%;
 }
+
+/* Text Underneath Logo */
 
 .description-paragraph {
     text-align: center;
     color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2vw;
+    font-weight: bold;
 }
 
