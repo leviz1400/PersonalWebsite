@@ -7,7 +7,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import './pages/Languages.css'
 import './pages/ContactStyles.css'
 import './components/nav-section/Navigation.css'
-import './App.css'
+//import './App.css'
 
 function App() {
   return (
