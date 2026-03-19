@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Layout from './components/nav-section/Layout'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './pages/Languages.css'
+import './pages/ContactStyles.css'
 import './components/nav-section/Navigation.css'
 import './App.css'
 
