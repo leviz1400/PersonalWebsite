@@ -3,10 +3,11 @@
 .languages-frame {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-self: center;
-    justify-content: center;
+    justify-content: safe center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     
     width: 100%;
     max-width: 2160px;
@@ -27,19 +28,27 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
+    flex: 1 1 100%;
 
     position: relative;
-    min-width: 12rem;
-    max-width: 20%;
-    height: 100%;
 
-    gap: 0rem;
+    max-width: 15rem;
+    min-width: 5rem;
+    
+    height: 100%;
 
     border-radius: 35px;
     border-style: solid;
     background-color: #282a2c;
     animation: 1s ease-in-out 0s 1 normal forwards easeInAnimation;
+}
+
+@media (max-width: 768px) {
+    .language-container-frame {
+        flex: 1 1 100%;
+        width: 5vw;
+    }
+    
 }
 
 @keyframes easeInAnimation {
@@ -59,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 15%;
     flex: 1;
 
     position: absolute;
