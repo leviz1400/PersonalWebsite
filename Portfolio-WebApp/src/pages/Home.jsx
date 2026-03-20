@@ -3,7 +3,19 @@ import JavaLogo from '../assets/Java-logo.png'
 import CSharpLogo from '../assets/Csharp-Logo.png'
 import LuaLogo from '../assets/Lua-Logo.png'
 
+import {useState} from 'react'
+
 function Home() {
+    /*const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = (event) => {
+        console.log("Hovered");
+        setIsHovered(true);
+    }
+
+    const handleMouseLeave = (event) => {
+        setIsHovered(false);
+    }*/
+
     return (
 
         // Language Frame
@@ -12,7 +24,15 @@ function Home() {
 
             {/* JavaScript Section */}
 
-            <div className="language-container-frame">
+            <div 
+            className="language-container-frame"
+            /*onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{
+                transform: isHovered ? 'translateY(-20px)' : 'translateY(0px)'
+
+            }}*/
+            >
                 <div className="logo-frame">
                     <img src={JavaScriptLogo} alt="JavaScript Logo" className="logo-image" />
                 </div>

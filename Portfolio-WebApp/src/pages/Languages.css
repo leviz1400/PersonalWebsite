@@ -19,36 +19,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-}
 
-/* Language Container Frames */
-
-.language-container-frame {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 1 1 100%;
-
-    position: relative;
-
-    max-width: 15rem;
-    min-width: 5rem;
-    
-    height: 100%;
-
-    border-radius: 35px;
-    border-style: solid;
-    background-color: #282a2c;
     animation: 1s ease-in-out 0s 1 normal forwards easeInAnimation;
-}
-
-@media (max-width: 768px) {
-    .language-container-frame {
-        flex: 1 1 100%;
-        width: 5vw;
-    }
-    
 }
 
 @keyframes easeInAnimation {
@@ -59,6 +31,47 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Language Container Frames */
+
+.language-container-frame {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    max-width: 15rem;
+    min-width: 5rem;
+    height: 100%;
+
+    border-radius: 35px;
+    border-style: solid;
+    background-color: #282a2c;
+}
+
+.language-container-frame:hover {
+    animation: 0.2s ease-in-out 0s 1 normal forwards easeUpAnimation;
+}
+
+@media (max-width: 768px) {
+    .language-container-frame {
+        flex: 1 1 100%;
+        width: 5vw;
+    }
+    
+}
+
+@keyframes easeUpAnimation {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
     }
 }
 
