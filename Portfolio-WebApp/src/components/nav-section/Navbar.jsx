@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function NavBar() {
+function NavBar(props) {
     return (
         <header>
             <div className="header-flex-container">

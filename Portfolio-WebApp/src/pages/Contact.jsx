@@ -26,14 +26,21 @@ function MouseLocation() {
     )
 }
 
+function ClickyButton(props) {
+    return <button>{props.title}</button>
+}
+
 function Contact() {
     return (
         <body>
             <div>
-                <h1 className="contact-page-header" {...console.log("Hello")}>Contact Page</h1>
+                <h1 className="contact-page-header">Contact Page</h1>
             </div>
             <div>
                 <h1>{<MouseLocation />}</h1>
+                <ClickyButton title="Click Me Please!"></ClickyButton>
+                <br/>
+                
             </div>
         </body>
     )
