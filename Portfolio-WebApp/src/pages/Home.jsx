@@ -4,8 +4,7 @@ import CSharpLogo from '../assets/Csharp-Logo.png'
 import LuaLogo from '../assets/Lua-Logo.png'
 import LanguageContainer from '../components/languagecontainers/LanguageContainer'
 
-import {useState} from 'react'
-import { useEffect } from 'react'
+import {useState, useEffect} from 'react'
 
 function Home() {
 
